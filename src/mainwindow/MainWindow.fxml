@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="556.0" prefWidth="829.0" stylesheets="@mainwindow.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainwindow.MainwindowController">
+   <children>
+      <ImageView fitHeight="556.0" fitWidth="846.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="image/Maharaja-Express1.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutY="367.0" prefHeight="154.0" prefWidth="827.0" spacing="48.0">
+         <children>
+            <JFXButton onAction="#loadbookticket" prefHeight="158.0" prefWidth="168.0" stylesheets="@mainwindow.css" text="Book Ticket" textAlignment="CENTER" textFill="#ebebeb" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="10.0" onAction="#loadbirthavailibility" prefHeight="158.0" prefWidth="168.0" stylesheets="@mainwindow.css" text="Check Birth Availibility" textAlignment="CENTER" textFill="#ebebeb" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="178.0" layoutY="10.0" onAction="#loadreservationsmade" prefHeight="158.0" prefWidth="168.0" stylesheets="@mainwindow.css" text="Reservations Made" textAlignment="CENTER" textFill="#ebebeb" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="663.0" layoutY="18.0" onAction="#loadcancelticket" prefHeight="158.0" prefWidth="168.0" text="Cancel Ticket" textAlignment="CENTER" textFill="#ebebeb" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" />
+               </effect>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+      <JFXButton layoutX="707.0" layoutY="14.0" onAction="#signoutaction" prefHeight="51.0" prefWidth="121.0" text="Signout" textAlignment="CENTER" textFill="#ebebeb" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </JFXButton>
+      <Label fx:id="username" layoutX="714.0" layoutY="31.0" prefHeight="17.0" prefWidth="0.0" />
+      <JFXButton layoutX="7.0" layoutY="12.0" onAction="#searchtrainaction" prefHeight="107.0" prefWidth="168.0" text="Search Train By Source and Destination" textAlignment="CENTER" textFill="#ebebeb" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="7.0" layoutY="129.0" onAction="#searchtrainbydateaction" prefHeight="107.0" prefWidth="168.0" text="Search Train By Date" textAlignment="CENTER" textFill="#ebebeb" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="7.0" layoutY="250.0" onAction="#checkticketfareaction" prefHeight="107.0" prefWidth="168.0" text="Check Ticket Fare" textAlignment="CENTER" textFill="#ebebeb" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

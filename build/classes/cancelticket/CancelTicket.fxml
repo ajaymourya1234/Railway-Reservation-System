@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="761.0" style="-fx-background-color: #C5CAE9;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cancelticket.CancelTicketController">
+   <children>
+      <JFXTextField fx:id="namedelete" labelFloat="true" layoutX="54.0" layoutY="43.0" onAction="#delete" prefHeight="35.0" prefWidth="295.0" promptText="Enter passenger Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="delete" layoutX="494.0" layoutY="43.0" onAction="#delete" prefHeight="39.0" prefWidth="92.0" style="-fx-background-color: #2196F3;" text="Delete" textFill="#ebebeb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tableview" layoutY="105.0" prefHeight="347.0" prefWidth="762.0">
+        <columns>
+          <TableColumn fx:id="traincol" prefWidth="87.0" text="TRAIN NO" />
+          <TableColumn fx:id="passengercol" prefWidth="145.0" text="PASSENGER NAME" />
+            <TableColumn fx:id="agecol" prefWidth="70.0" text="AGE" />
+            <TableColumn fx:id="gendercol" text="GENDER" />
+            <TableColumn fx:id="sourcecol" prefWidth="126.0" text="SOURCE" />
+            <TableColumn fx:id="destcol" prefWidth="119.0" text="DESTINATION" />
+            <TableColumn fx:id="journeydatecol" prefWidth="162.0" text="JOURNEY_DATE" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

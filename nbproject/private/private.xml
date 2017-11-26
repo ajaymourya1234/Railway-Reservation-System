@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
+        <file>
+            <url>src/searchtrain/SearchTrainController.java</url>
+            <bookmark id="2">
+                <name/>
+                <line>69</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ajay/Documents/NetBeansProjects/Railways/src/searchtrain/SearchTrainController.java</file>
+            <file>file:/C:/Users/ajay/Documents/NetBeansProjects/Railways/src/bbirthavailibility/BirthAvailibilityController.java</file>
+            <file>file:/C:/Users/ajay/Documents/NetBeansProjects/Railways/src/searchtrainbydate/TrainSearchByDateController.java</file>
+            <file>file:/C:/Users/ajay/Documents/NetBeansProjects/Railways/src/ticketfare/TicketFareController.java</file>
+            <file>file:/C:/Users/ajay/Documents/NetBeansProjects/Railways/src/addnewuser/NewUserController.java</file>
+            <file>file:/C:/Users/ajay/Documents/NetBeansProjects/Railways/src/mainwindow/MainwindowController.java</file>
+            <file>file:/C:/Users/ajay/Documents/NetBeansProjects/Railways/src/database/DatabaseHandler.java</file>
+            <file>file:/C:/Users/ajay/Documents/NetBeansProjects/Railways/src/bookticket/BookticketController.java</file>
+            <file>file:/C:/Users/ajay/Documents/NetBeansProjects/Railways/src/searchtrain/SearchTrain.fxml</file>
+        </group>
+    </open-files>
+</project-private>

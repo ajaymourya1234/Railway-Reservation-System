@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="570.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookticket.BookticketController">
+   <children>
+      <Pane layoutX="8.0" layoutY="7.0" prefHeight="557.0" prefWidth="713.0" style="-fx-background-color: #C5CAE9;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+         <children>
+            <JFXTextField fx:id="trainno" labelFloat="true" layoutX="38.0" layoutY="98.0" prefHeight="37.0" prefWidth="234.0" promptText="Enter Train No">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="230.0" layoutY="28.0" prefHeight="37.0" prefWidth="254.0" text="TICKET RESERVATION" textFill="#0007f0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="passengername" labelFloat="true" layoutX="38.0" layoutY="185.0" prefHeight="37.0" prefWidth="234.0" promptText="Enter Passenger Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="age" labelFloat="true" layoutX="38.0" layoutY="269.0" prefHeight="37.0" prefWidth="234.0" promptText="Enter Age">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="selectgender" editable="true" labelFloat="true" layoutX="38.0" layoutY="361.0" prefHeight="37.0" prefWidth="234.0" promptText="Select Gender" />
+            <JFXTextField fx:id="source" labelFloat="true" layoutX="378.0" layoutY="98.0" prefHeight="37.0" prefWidth="234.0" promptText="Enter Source">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="destination" labelFloat="true" layoutX="378.0" layoutY="185.0" prefHeight="37.0" prefWidth="234.0" promptText="Enter Destination">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXDatePicker fx:id="datepicker" layoutX="378.0" layoutY="270.0" prefHeight="37.0" prefWidth="234.0" promptText="Enter Journey Date" />
+            <JFXButton fx:id="book" layoutX="296.0" layoutY="462.0" onAction="#bookticket" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #2196F3;" text="Book" textFill="#ebebeb" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

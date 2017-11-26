@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="648.0" style="-fx-background-color: #C5CAE9;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="searchtrain.SearchTrainController">
+   <children>
+      <JFXComboBox fx:id="source" labelFloat="true" layoutX="43.0" layoutY="31.0" prefHeight="38.0" prefWidth="164.0" promptText="Select Source" />
+      <JFXComboBox fx:id="destination" labelFloat="true" layoutX="274.0" layoutY="31.0" prefHeight="38.0" prefWidth="164.0" promptText="Select Destination" />
+      <JFXButton fx:id="submit" layoutX="505.0" layoutY="31.0" onAction="#submitaction" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: #2196F3;" text="Submit" textAlignment="CENTER" textFill="#ebebeb" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tableview" layoutX="7.0" layoutY="90.0" prefHeight="338.0" prefWidth="634.0">
+        <columns>
+          <TableColumn fx:id="trainnocol" prefWidth="124.0" text="TRAIN NO" />
+          <TableColumn fx:id="trainnamecol" prefWidth="180.0" text="TRAIN NAME" />
+            <TableColumn fx:id="sourcecol" prefWidth="162.0" text="SOURCE" />
+            <TableColumn fx:id="destcol" prefWidth="167.0" text="DESTINATION" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

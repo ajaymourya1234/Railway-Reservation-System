@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addnewuser.NewUserController">
+   <children>
+      <Pane layoutX="13.0" layoutY="13.0" prefHeight="484.0" prefWidth="608.0" style="-fx-background-color: #C5CAE9;">
+         <children>
+            <JFXTextField fx:id="name" labelFloat="true" layoutX="51.0" layoutY="52.0" prefHeight="37.0" prefWidth="234.0" promptText="Enter Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="age" labelFloat="true" layoutX="51.0" layoutY="135.0" prefHeight="37.0" prefWidth="234.0" promptText="Enter Age">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="phoneno" labelFloat="true" layoutX="51.0" layoutY="311.0" prefHeight="37.0" prefWidth="234.0" promptText="Enter Phone No">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="userid" labelFloat="true" layoutX="320.0" layoutY="52.0" prefHeight="37.0" prefWidth="234.0" promptText="Enter User id">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="register" layoutX="102.0" layoutY="397.0" onAction="#registeruser" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: #2196F3;" stylesheets="@addnewuser.css" text="Register" textFill="#ebebeb">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="cancel" layoutX="371.0" layoutY="397.0" onAction="#cancel" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: #2196F3;" stylesheets="@addnewuser.css" text="Cancel" textFill="#ebebeb">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="password" labelFloat="true" layoutX="320.0" layoutY="133.0" prefHeight="39.0" prefWidth="234.0" promptText="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="password1" labelFloat="true" layoutX="320.0" layoutY="233.0" prefHeight="39.0" prefWidth="234.0" promptText="ConfirmPassword">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXComboBox fx:id="selectgender" labelFloat="true" layoutX="51.0" layoutY="233.0" prefHeight="39.0" prefWidth="234.0" promptText="Select Gender" />
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

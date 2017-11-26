@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="451.0" prefWidth="582.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="ticketfare.TicketFareController">
+   <children>
+      <TableView fx:id="tableview" prefHeight="451.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="trainnocol" prefWidth="108.0" text="TRAIN NO" />
+          <TableColumn fx:id="sourcecol" prefWidth="157.0" text="SOURCE" />
+            <TableColumn fx:id="destcol" prefWidth="157.0" text="DESTINATION" />
+            <TableColumn fx:id="farecol" prefWidth="157.0" text="FARE" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

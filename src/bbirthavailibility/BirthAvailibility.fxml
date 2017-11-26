@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="342.0" prefWidth="586.0" style="-fx-background-color: #C5CAE9;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bbirthavailibility.BirthAvailibilityController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" prefHeight="82.0" prefWidth="533.0" spacing="35.0">
+         <children>
+            <JFXComboBox fx:id="selecttrainno" labelFloat="true" prefHeight="31.0" prefWidth="144.0" promptText="Enter train no" />
+            <JFXButton fx:id="submit" onAction="#submit" prefHeight="31.0" prefWidth="93.0" style="-fx-background-color: #2196F3;" text="Submit" textFill="#ebebeb">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="tableview" accessibleRole="IMAGE_VIEW" fixedCellSize="0.0" layoutX="3.0" layoutY="101.0" prefHeight="233.0" prefWidth="579.0">
+        <columns>
+          <TableColumn fx:id="traincol" prefWidth="87.0" text="TRAIN NO" />
+          <TableColumn fx:id="trainnamecol" prefWidth="154.0" text="TRAIN NAME" />
+            <TableColumn fx:id="destcol" prefWidth="110.0" text="DESTINATION" />
+            <TableColumn fx:id="seatscol" prefWidth="115.0" text="AVAILABLE SEATS" />
+            <TableColumn fx:id="sourcecol" prefWidth="109.0" text="SOURCE" />
+        </columns>
+        
+        
+      </TableView>
+   </children>
+</AnchorPane>
